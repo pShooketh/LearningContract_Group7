@@ -7,26 +7,376 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Learning Contract (Group 7)"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/aaaa"
-        tools:layout_editor_absoluteY="35dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/Title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Learning Contract"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ExpectTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Expectations:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/expect1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginBottom="2sp"
+                    android:text="1. We aim to gain a comprehensive understanding of the mobile app development process, from ideation to deployment."
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/expect2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginBottom="2sp"
+                    android:text="2. We expect to learn how to design and code apps for both Android and iOS platforms using frameworks."
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/expect3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginBottom="2sp"
+                    android:text="3. We plan to work on real-world projects that will challenge our problem-solving and teamwork skills."
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/expect4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginBottom="2sp"
+                    android:text="4. We want to understand user experience (UX) principles to build functional, user-friendly apps."
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/expect5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginBottom="2sp"
+                    android:text="5. We hope to gain a solid foundation in both front-end and back-end development."
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ContriTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contributions:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/contri1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginBottom="2sp"
+                    android:text="1. We will divide responsibilities based on our individual strengths: front-end design, back-end development, and database integration."
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/contri2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginBottom="2sp"
+                    android:text="2. We will collaborate on debugging, testing, and ensuring high-quality code."
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/contri3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginBottom="2sp"
+                    android:text="3. We will schedule regular meetings to share progress, discuss challenges, and make collective decisions."
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/contri4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginBottom="2sp"
+                    android:text="4. We will research and implement new tools, libraries, and frameworks to improve our app’s functionality."
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/contri5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginBottom="2sp"
+                    android:text="5. We will provide constructive feedback to each other to improve our work individually and as a team."
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/MotivTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Motivations:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/motiv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginBottom="2sp"
+                    android:text="1. We are motivated by the opportunity to create functional, innovative apps that could be launched in app stores."
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/motiv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginBottom="2sp"
+                    android:text="2. We aim to build a strong portfolio of projects to showcase our skills and knowledge."
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/motiv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginBottom="2sp"
+                    android:text="3. We are excited to improve our coding abilities and stay up-to-date with industry trends and best practices."
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/motiv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginBottom="2sp"
+                    android:text="4. We enjoy the challenge of working as a team and solving complex problems together."
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/motiv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginBottom="2sp"
+                    android:text="5. We are passionate about applying theoretical knowledge to real-world projects with practical value."
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/HindranceTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hindrances:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/hindrance1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginBottom="2sp"
+                    android:text="1. We may struggle to balance this project with other academic commitments and personal responsibilities."
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/hindrance2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginBottom="2sp"
+                    android:text="2. We might face challenges in learning new programming languages or tools, which could slow our progress."
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/hindrance3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginBottom="2sp"
+                    android:text="3. We could encounter coordination issues within the group due to differing schedules or skill levels."
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/hindrance4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginBottom="2sp"
+                    android:text="4. We might face limited access to certain development tools, libraries, or resources."
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/hindrance5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginBottom="2sp"
+                    android:text="5. We could feel overwhelmed by the workload of balancing theoretical lessons with hands-on app development tasks."
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/MemberTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:text="Members"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/name1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="de Guzman, Vince Je-anne B."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/name2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Garduque, Riv Andrei"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/name3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pineda, Mark Anthony D."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/name4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Santos, Jamie Lee"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/name5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zulueta, Shaira Jalaine V."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
